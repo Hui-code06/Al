@@ -21,6 +21,26 @@ pr（pull request拉取请求）参考资料：[文档贡献指南](https://www.
 
 5.**正式修改文档**  
   dst文档：此电脑--本地磁盘（C:）--用户--用户名--docs--docs--api--paddle--寻找在任务三领取的任务文档  
+  在参数上方编辑一段简短清晰的文字说明，并用路径在rst中链接图片即输入以下代码:  
+  `.. image:: ../../images/api_legend/任务名.png`  
+  `  :width:600` （根据自身情况调节）  
+  `  :alt: 图例`  
   图片修改：此电脑--本地磁盘（C:）--用户--用户名--docs--docs--images--api_legend--将自己做的图片增加到api_legend文档中（注意将图片名修改为任务名.png）  
 
-用路径在rst里面链接他.. image:: ../../images/api_legend/moveaxis.png
+6.**提交更改**  
+  `git add docs/api/paddle/tile_cn.rst`  
+  `git commit -m"add tile.png"`  
+
+7.**推送分支**  
+  将分支推送到Github  
+  `git push origin 新分支名`  
+  在倒数第二行会出现一个网页链接，复制到浏览器打开，点击pull request--new pull request--compare中勾选新分支--create pull request  
+  
+  注意！Github拒绝使用账号密码，需要密钥（点击Github个人头像--settings--developer settings--personal access tokens--fine-grained tokens）  
+  ![Cache_-255d773934bb6697](https://github.com/user-attachments/assets/04caafb0-f399-4c47-a4c9-2646faf38da8)  
+  ![Cache_-1a11170db5bbd6d8](https://github.com/user-attachments/assets/be8c2ac4-6492-48a8-ae3f-4e36d44f5641)
+
+8.**提交**  
+  按照下图格式提交
+  ![image](https://github.com/user-attachments/assets/ed17b611-260f-447c-b80a-b130aa30aa36)
+
